@@ -1,0 +1,84 @@
+.review{
+    display: flex;
+    flex-direction: column;
+}
+
+.review_main{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#review_heading p{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+#review_tester{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+
+@media (max-width:1080px){
+    #review_tester{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:720px){
+    #review_tester{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .review_main{
+        width: 50%;
+    }
+
+}
+
+#review_card{
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    border-radius: 2%;
+    padding: 5%;
+    margin-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 250ms ease-in-out;
+}
+
+#review_card:hover{
+    transform: scale(1.1);
+    border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+#review_card img{
+    width:5rem;
+    border-radius: 100%;
+    margin: 3%;
+}
+
+#review_card p{
+    text-align: center;
+}
+
+#review_description{
+    font-size: 0.8rem;
+    font-family: 'Times New Roman', Times, serif;
+} 
+
+#review_card h4{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blueviolet;
+}
+
+#review_person_profession{
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+}
