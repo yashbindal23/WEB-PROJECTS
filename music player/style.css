@@ -1,0 +1,342 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #3E3E42;
+}
+
+nav {
+    padding: 3vw;
+    height: 8vh;
+    margin: 0 0 3vh 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-style: oblique;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.notification img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 720px) {
+    .left h3 {
+        font-size: 1.2rem;
+    }
+
+    .notification img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .profile img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .left h3 {
+        font-size: 1rem;
+    }
+
+    .notification img {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+    }
+
+    .profile img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* aside bar home search library */
+
+aside {
+    background-color: rgba(0, 0, 0, 0.645);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10vw;
+    height: 100%;
+    padding: 20px 10px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 80%;
+}
+
+aside ul li {
+    margin-bottom: 1rem;
+}
+
+aside ul li a {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    color: rgb(214, 194, 194);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+@media screen and (max-width: 1080px) {
+    aside {
+        padding: 20px 2px;
+    }
+
+    aside ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside a span {
+        display: none;
+    }
+}
+
+aside ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+aside ul li img {
+    width: 20px;
+}
+
+/* Responsive Design for Sidebar */
+
+/* music list present between in cards form */
+
+main {
+
+    margin: 0 1vw 0 10vw;
+    padding: 0px 10px;
+}
+
+.activity_wise_playlist,
+.character_wise_playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.character_wise_playlist {
+    padding-top: 20px;
+    margin-bottom: 4.2rem;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading h2,
+.bottom_list h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgba(0, 255, 255, 0.633);
+}
+
+.heading a {
+    font-size: 0.9rem;
+    background-color: rgba(255, 255, 255, 0.458);
+    border-radius: 15px;
+    padding: 0.1rem 0.3rem;
+    color: #000000;
+}
+
+.music_card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.music {
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#music_template {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    position: relative;
+}
+
+#music_template_play {
+    width: 3rem;
+    cursor: pointer;
+}
+
+.over_song_detail {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.song_name {
+    color: aliceblue;
+    font-size: 22px
+}
+
+@media screen and (max-width: 1150px) {
+    .song_name {
+        font-size: 14px
+    }
+}
+@media screen and (max-width: 920px) {
+
+    .heading h2,
+    .bottom_list h2 {
+        font-size: 1.2rem;
+    }
+
+    .heading a {
+        font-size: 0.7rem;
+    }
+
+    .song_name {
+        font-size: 60%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .heading h2,
+    .bottom_list h2 {
+        font-size: 0.8rem;
+    }
+
+    .heading a {
+        font-size: 0.5rem;
+    }
+
+    .song_name {
+        font-size: 35%
+    }
+
+}
+
+
+/* music which is present in list at last */
+
+/* .bottom_list {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+}
+
+.music_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.music_list .music{
+    height: 5rem;
+    width: 100%;
+    margin: 0.2rem 0;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+#music_template_list{
+    height: 4rem;
+    border-radius: 3px;
+}
+
+#music_template_list_play{
+    height: 3rem;
+} */
+
+/* playing sond progrss bar */
+
+.play_head {
+    position: fixed;
+    background-color: rgb(121, 112, 112);
+    bottom: 0;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0.5rem 1.5rem;
+}
+
+.song_img_display {
+    width: 4.5rem;
+    height: 3rem;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.song_play_detail {
+    display: flex;
+    gap: 20px;
+    color: cornsilk;
+}
+
+#progress_bar {
+    width: 70%;
+    cursor: pointer;
+}
+
+.play_function{
+    display: flex;
+}
+
+.play_function img {
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:720px){
+    .song_play_detail {
+        gap: 10px;
+    }
+    .song_img_display {
+        width: 3.5rem;
+        height: 3rem;
+    }
+    .song_name_display{
+        font-size: 10px;
+    }
+}
